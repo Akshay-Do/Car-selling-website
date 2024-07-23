@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.banner{
+    background-color: aliceblue;
+    background-position: center;
+}
+.banner h3{
+    padding: 10px;
+    font-size: large;
+    color: #f24645;
+}
+.navbar{
+    width: 100%;
+    background-color: darkcyan;
+    position: relative;
+    margin: auto;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+.navbar h3{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color:#f24645;
+    transition: 0.5s;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-image: linear-gradient(to right,#6253e1,#852d91,#a3a1ff,#f24645);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 325px;
+    margin: 20px;
+    border-radius: 10px;
+    /*background-color: #fff;*/
+    /*box-shadow: 0px 2px 4px rgba(0,0,0,0.2);*/
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.card:hover{
+    background-color: #dedded;
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    padding: 20px;
+}
+
+.content h4{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 17px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.content a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #e33d27;
+}
+
+
+.container .card:hover .hover-me {
+    z-index: 99;
+    opacity: 1;
+    display: block;
+    transition: .3s ease-in-out;
+    transform: translateY(0%);
+}
+.hover-me {
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    transform: translateY(-20%);
+    display: none
+}
+
+.hover-me .ptitle {
+    padding: 10px;
+}
+.center {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0px 10p
+}
+.center .btn-primary{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: aliceblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.popup{
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms, 
+                opacity 200ms ease-in-out 0ms, 
+                transform 200ms ease-in-out 0ms;
+}
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms, 
+                opacity 200ms ease-in-out 0ms, 
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+.popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+.popup .form .form-element input[type="text"], .popup .form .form-element input[type="number"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+} 
+.popup .form .form-element #submit{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.desc-wrapper {
+    background: #4d4d4d;
+    padding: 10px;
+}
+.table-responsive {
+    border: none !important;
+    min-height: .01%;
+    overflow-x: auto
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit
+}
+.desc-wrapper .table > tbody > tr:first-child td {
+    border-top: none;
+}
+.desc-wrapper .table > thead > tr > th, .desc-wrapper .table > tbody > tr > th, .desc-wrapper .table > tfoot > tr > th, .desc-wrapper .table > thead > tr > td, .desc-wrapper .table > tbody > tr > td, .desc-wrapper .table > tfoot > tr > td {
+    border-bottom: 1px solid #717171;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    font-size: 14px
+}
+
+
+
+
+

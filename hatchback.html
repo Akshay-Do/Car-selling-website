@@ -1,0 +1,943 @@
+<html>
+    <head>
+        <title>Hatchbacks</title>
+        <link rel="stylesheet" href="styleH.css">
+    </head>
+    <body>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form" id="form" method="post" action="connect.php" onsubmit="return(validate());">
+                <h2>REQUEST FOR FULL DETAILS/ QUOTE</h2>
+                <div class="form-element">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter First name" name="firstname">
+                </div>
+                <div class="form-element">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter Last name" name="lastname">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-element">
+                    <label for="refno">Ref No.</label>
+                    <input type="number" id="refno" placeholder="Enter Ref No." name="refno">
+                </div>
+                <div class="form-element">
+                    <label for="comments">Comments</label>
+                    <input type="text" id="comments" placeholder="Full car details or Quote" name="comments">
+                </div>
+                <div class="form-element">
+                    <button type="button" id="submit" onclick="submitData()">Submit</button>
+                </div>
+            </div>
+        </div> 
+        <p id="message"></p>
+        <div class="banner">
+            <div class="navbar">
+                <a href = "main.html"><img src="logo.jpg" class="logo"> </a>
+                <ul>
+                    <li><a href="main.html"> Home</a></li>
+                    <li><a href="sedan.html"> Sedans</a></li>
+                    <li><a href="pickup.html"> Pickups</a></li>
+                    <li><a href="suv.html"> Suvs</a></li>
+                   <!-- <li><a href="van.html"> Vans</a></li> -->
+                    <li><a href="about.html"> About us</a></li>
+                    <li><a href="contact.html"> Contact us</a></li>
+                </ul>   
+            </div>
+            <h3 align="center">HATCHBACKS</h3>
+            <div class="container">
+                <div class="card">
+                    <img src="https://www.crotonmotors.com/wp-content/uploads/2019/01/probox.jpg">
+                    <div class="content">
+                        <h4>TOYOTA PROBOX</h4>
+                        <p>2019 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt1">Request Full Car Details/ Quote</button>
+                                    </div>                       
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1500 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/2020_Volkswagen_Golf_Style_1.5_Front.jpg">
+                    <div class="content">
+                        <h4>VW GOLF</h4>
+                        <p>2020 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt2">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>2000 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/2017_Toyota_Yaris_L_5-door%2C_front_left%2C_08-05-2023_%28cropped%29.jpg">
+                    <div class="content">
+                        <h4>TOYOTA VITZ</h4>
+                        <p>2017 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt3">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1400 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Nissan_Note_%28E12%29_IMG_0338.jpg/800px-Nissan_Note_%28E12%29_IMG_0338.jpg">
+                    <div class="content">
+                        <h4>NISSAN NOTE</h4>
+                        <p>2023 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt4">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1500 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Toyotapasso.jpg/800px-Toyotapasso.jpg">
+                    <div class="content">
+                        <h4>TOYOTA PASSO</h4>
+                        <p>2018 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt5">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1200 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.topgear.com/sites/default/files/2022/12/7_3.jpeg?w=848&h=477">
+                    <div class="content">
+                        <h4>AUDI A3</h4>
+                        <p>2022 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt6">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>2000 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>4 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>White</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.topgear.com/sites/default/files/2022/12/10_3.jpeg?w=848&h=477">
+                    <div class="content">
+                        <h4>TOYOTA GR YARIS</h4>
+                        <p>2021 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt7">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1400 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>White</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.topgear.com/sites/default/files/2022/12/4_3.jpeg?w=848&h=477">
+                    <div class="content">
+                        <h4>FORD FOCUS</h4>
+                        <p>2023 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt8">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1500 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Red</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://topcar.co.ke/wp-content/uploads/2020/05/2013-Mercedes-A-Class-12-min.jpg">
+                    <div class="content">
+                        <h4>MERCEDES A-CLASS</h4>
+                        <p>2023 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt9">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1900</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>2000 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Blue</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.ed.edmunds-media.com/subaru/impreza/2024/oem/2024_subaru_impreza_4dr-hatchback_rs_fq_oem_1_815x543.jpg">
+                    <div class="content">
+                        <h4>SUBARU IMPREZA</h4>
+                        <p>2024 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt10">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1110</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>2000 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Manual</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Red</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://media.ed.edmunds-media.com/mini/clubman/2023/oem/2023_mini_clubman_4dr-hatchback_cooper-s_fq_oem_2_500.jpg">
+                    <div class="content">
+                        <h4>MINI CLUBMAN</h4>
+                        <p>2024 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt11">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1120</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1500 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Bronze</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://carsguide-res.cloudinary.com/image/upload/e_trim:10,f_auto/c_scale,t_cg_base,w_382/v1/editorial/hyundai-i30-my21-index-1.png">
+                    <div class="content">
+                        <h4>HYUNDAI I30</h4>
+                        <p>2024 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt12">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1130</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1400 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Dark Blue</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.smartautos.co.ke/images/CarPhotos/Large_34de58a33bcbc317e10ff519f6507860_30102023083215.png">
+                    <div class="content">
+                        <h4>TOYOTA AURIS</h4>
+                        <p>2017 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt13">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1140</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>2000 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>White</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.smartautos.co.ke/images/CarPhotos/Large_9c207a0a841b52c1a51d19c90c15369a_01042023104454.jpg">
+                    <div class="content">
+                        <h4>TOYOTA PIXIS</h4>
+                        <p>2016 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt14">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1150</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1100 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>white</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.smartautos.co.ke/images/CarPhotos/Large_62f1ac58f65719e8ef28f48fca7613da_16092023011829.jpg">
+                    <div class="content">
+                        <h4>TOYOTA AQUA HYBRID</h4>
+                        <p>2016 model</p>
+                        <div class="hover-me">
+                            <div class="hover-content">
+                                <div class="ptitle">
+                                    <div class="center">
+                                        <button class="btn-primary" id="bt15">Request Full Car Details/ Quote</button>
+                                    </div> 
+                                </div>
+                                <div class="desc-wrapper">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ref No</td>
+                                                    <td> :</td>
+                                                    <td>1160</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Engine Size</td>
+                                                    <td> :</td>
+                                                    <td>1400 CC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drive</td>
+                                                    <td> :</td>
+                                                    <td>2 WD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transmission</td>
+                                                    <td> :</td>
+                                                    <td>Auto</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>Fuel</td>
+                                                    <td> :</td>
+                                                    <td>Petrol</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Exterior Color</td>
+                                                    <td> :</td>
+                                                    <td>Silver</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interior Color</td>
+                                                    <td> :</td>
+                                                    <td>Black</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script src="func.js"></script>
+        <script src="func2.js"></script>
+        <script src="func3.js"></script>
+    </body>
+</html>
